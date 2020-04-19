@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/displayFragment2"
+        android:name="com.tanloc.le.myapplication.DisplayFragment"
+        android:label="DisplayFragment"></fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.tanloc.le.myapplication.MainActivity"
+        android:label="MainActivity">
+        <action
+            android:id="@+id/toFragment"
+            app:destination="@id/displayFragment2" />
+    </activity>
+</navigation>
